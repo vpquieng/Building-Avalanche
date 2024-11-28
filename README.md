@@ -1,4 +1,4 @@
-# MetaCrafters Building on Avalanche - ETH + AVAX
+# Metacrafters Building on Avalanche - ETH + AVAX
 
 ## Overview
 This program features a Solidity contract designed for deploying decentralized applications (DApps) on both Ethereum and Avalanche networks. Built using Solidity and OpenZeppelin libraries, the contract provides functionalities for minting, burning, and transferring tokens, as well as enabling users to redeem items with those tokens. This project is a part of the MetaCrafters ETH + AVAX Proof: Intermediate EVM Course.
@@ -17,7 +17,7 @@ The degenToken contract is a custom ERC20 token built using OpenZeppelin's ERC20
 ### Steps to Deploy  
 1. **Clone the Repository**:  
 ```bash
-git clone https://github.com/vpquieng/types-and-functions.git
+git clone https://github.com/vpquieng/Building-Avalanche.git
 ```
 2. **Compile the Contract**:  
 - Open the degenToken.sol file in Remix.

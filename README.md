@@ -1,7 +1,7 @@
 # Metacrafters Building on Avalanche - ETH + AVAX
 
 ## Overview
-This program features a Solidity contract designed for deploying decentralized applications (DApps) on both Ethereum and Avalanche networks. Built using Solidity and OpenZeppelin libraries, the contract provides functionalities for minting, burning, and transferring tokens, as well as enabling users to redeem items with those tokens. This project is a part of the MetaCrafters ETH + AVAX Proof: Intermediate EVM Course.
+This program features a Solidity contract designed for deploying decentralized applications (DApps) on both Ethereum and Avalanche networks. Built using Solidity and OpenZeppelin libraries, the contract provides functionalities for minting, burning, and transferring tokens, as well as enabling users to redeem items with those tokens.
 
 ## Description 
 Degen Token

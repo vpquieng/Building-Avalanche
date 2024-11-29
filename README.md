@@ -34,7 +34,8 @@ After deployment, you can interact with the contract as follows:
 - Burn Tokens: Users can call burnTokens to burn a specified number of tokens from their own balance.
 - Redeem Item: Call redeemItem with the item ID to exchange tokens for items in the catalog.
 - Show Items: Call itemList to view the list of redeemable items, including their names, prices, and availability.
-
+- View Redeemed Items: Retrieve your redemption history using getRedeemedItems from account. This returns a list of item IDs that the user has redeemed.
+  
 ## Contract Details
 - **Solidity Version**: `0.8.26`
 - **Constructor**: Sets the deployer as the owner.

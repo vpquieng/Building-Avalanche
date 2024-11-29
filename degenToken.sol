@@ -11,6 +11,7 @@ contract degenToken is ERC20, Ownable {
         bool available;
     }
     mapping(uint => Item) public items;
+    mapping(address => uint[]) public redeemedItems;
     uint public itemCount;
 
     event ItemRedeemed(address indexed user, uint indexed itemId, string itemName, uint price);
@@ -53,8 +54,13 @@ contract degenToken is ERC20, Ownable {
         require(balanceOf(msg.sender) >= item.price, "Your balance is insufficient to redeem this item");
         _burn(msg.sender, item.price);
         item.available = false;
+        redeemedItems[msg.sender].push(itemId);
         emit ItemRedeemed(msg.sender, itemId, item.name, item.price);
     }
+
+    function getRedeemedItems(address user) public view returns (uint256[] memory) {
+    return redeemedItems[user];
+}
 
     function itemList() public view returns (string[] memory, uint[] memory, bool[] memory) {
         string[] memory itemNames = new string[](itemCount);
